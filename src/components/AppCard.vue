@@ -19,7 +19,7 @@ export default {
             <div class="card-body">
                 <div class="text-center text-white flex-grow-1 d-flex flex-column h-100">
                     <h5 class="fw-light">{{ info.name  }}</h5>
-                    <span class="mt-auto text-dark fw-lighter fs-4">Alien</span>
+                    <span class="mt-auto text-dark fw-lighter fs-4 pb-2">Alien</span>
                 </div>
             </div>
         </div>
