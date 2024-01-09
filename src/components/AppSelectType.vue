@@ -1,7 +1,12 @@
 <script >
-
+import { store } from '../store'
 export default {
-    name: 'AppSelectType'
+    name: 'AppSelectType',
+    data(){
+        return{
+            store
+        }
+    },
 }
 
 
@@ -11,7 +16,8 @@ export default {
 <template>
     <div>
         <select class="form-select mb-3 ms-1 " id="floatingSelectGrid">
-            <option selected>Alien</option>
+            <option selected>Seleziona l'archeotipo</option>
+            <option value="" v-for="cardType in store.typeCardlist" :key="cardType">{{ cardType.archetype_name }}</option>
         </select>
     </div>
 </template>
@@ -21,6 +27,6 @@ export default {
 @import '../styles/partials/_variables';
 
 .form-select {
-    width: 12%;
+    width: fit-content;
 }
 </style>

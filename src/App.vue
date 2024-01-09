@@ -25,23 +25,36 @@ export default {
       }, 3000);
     }
     },
-    getCard() {
+    getCardType() {
       axios
-        .get('https://db.ygoprodeck.com/api/v7/cardinfo.php?num=20&offset=0')
+        .get('https://db.ygoprodeck.com/api/v7/archetypes.php')
         .then((res) => {
           // DEBUG
-          console.log(res.data.data);
-          store.cardlist = res.data.data;
+          console.log(res.data);
+          store.typeCardlist = res.data;
   
         })
         .catch((err) => {
           console.log("Errori", err)
         });
     }
+    // getCard() {
+    //   axios
+    //     .get('https://db.ygoprodeck.com/api/v7/cardinfo.php?num=20&offset=0')
+    //     .then((res) => {
+    //       // DEBUG
+    //       console.log(res.data.data);
+    //       store.cardlist = res.data.data;
+  
+    //     })
+    //     .catch((err) => {
+    //       console.log("Errori", err)
+    //     });
+    // }
   },
   created() {
     this.loadingscreen();
-    this.getCard();
+    this.getCardType();
 
 
   }
