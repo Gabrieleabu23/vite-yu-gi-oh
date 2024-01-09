@@ -10,14 +10,6 @@ export default {
         return{
             store
         }
-    },
-    methods:{
-        printCard(){
-            console.log("Esempio di stampa:",store.cardlist[2]);
-        }
-    },
-    mounted(){
-        this.printCard();
     }
 } 
 
