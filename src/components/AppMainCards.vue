@@ -22,7 +22,7 @@ export default {
             <div class="row justify-content-between flex-wrap h-100">
                 <div class="col-12 height_found_card">
                     <div class="bg-dark height_found_card ps-3 d-flex align-items-center h-100">
-                        <span class="fw-semibold">Found 39 cards</span>
+                        <span class="fw-semibold">{{store.cardlist.length}}</span>
                     </div>
                 </div>
                 <div class="col-2 custom-col  pb-4" v-for="card in store.cardlist" :key="card">

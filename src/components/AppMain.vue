@@ -33,11 +33,6 @@ export default {
         }
 
     },
-    computed:{
-        boh(){
-            return this.printCards();
-        }
-    },
     created() {
         this.printCards()
     }
@@ -52,7 +47,7 @@ export default {
 <template>
     <main>
         <div class="container p-4 ps-0">
-            <AppSelectType @search="boh" />
+            <AppSelectType @search="printCards" />
             <AppMainCards />
         </div>
 
