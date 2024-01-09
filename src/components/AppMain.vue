@@ -16,8 +16,11 @@ export default {
     },
     methods: {
         printCards() {
+            console.log("lista generica:",store.cardlistgeneral)
             if (store.TypeChoose !== '') {
                 store.cardlist=[];
+
+                console.log("lista attuale carte:");
                 for (let i = 0; i < store.cardlistgeneral.length; i++) {
                     if (store.cardlistgeneral[i].archetype === store.TypeChoose) {
                         store.cardlist.push(store.cardlistgeneral[i])
@@ -27,7 +30,6 @@ export default {
                 }
 
             }else{
-                console.log("in generale",store.cardlist)
                 store.cardlist=store.cardlistgeneral
             }
         }
