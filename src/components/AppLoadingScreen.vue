@@ -65,10 +65,7 @@ export default {
       <div class="bar-progress" :style="{ width: loadingProgress + '%' }"></div>
     </div>
     <div class="epic-text">Preparati a duellare!</div>
-    <div class="theme-icons"> <!-- Aggiungi qui le icone tematiche -->
-      <!-- Ad esempio, icone per le carte mostro, magia, trappola, ecc. -->
-    </div>
-    <div class="life-points"> <!-- Aggiungi qui gli indicatori visivi dei punti vita --></div>
+    
   </div>
 </template>
 
@@ -118,13 +115,7 @@ body {
 }
 
 
-/* Stile per le icone dei mostri sulla barra di caricamento */
-.monster-icon {
-    width: 30px;
-    height: 30px;
-    margin: 0 2px;
-    /* Aggiungi stili per le icone dei mostri, ad esempio il colore, l'ombra, ecc. */
-}
+
 
 /* Stile per la frase epica */
 .epic-text {
@@ -133,20 +124,7 @@ body {
     /* Aggiungi stili per il testo epico, ad esempio colore, ombra, ecc. */
 }
 
-/* Stile per le icone tematiche */
-.theme-icons {
-    display: flex;
-    justify-content: space-between;
-    width: 50%;
-    margin-bottom: 30px;
-    /* Aggiungi stili per le icone tematiche, ad esempio dimensioni, ombra, ecc. */
-}
 
-/* Stile per i punti vita */
-.life-points {
-    margin-top: 20px;
-    /* Aggiungi stili per i punti vita, ad esempio colore, dimensioni, effetti visivi, ecc. */
-}
 
 /* Stile per il testo informativo di caricamento */
 .loading-text {

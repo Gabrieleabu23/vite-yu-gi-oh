@@ -1,9 +1,11 @@
 <script >
 import AppMainCards from './AppMainCards.vue'
+import AppSelectType from './AppSelectType.vue'
 export default {
     name: 'AppMain',
     components:{
-        AppMainCards
+        AppMainCards,
+        AppSelectType
     }
 } 
 
@@ -14,10 +16,7 @@ export default {
 <template>
     <main>
         <div class="container p-4 ps-0">
-            <select class="form-select mb-3 ms-1 " id="floatingSelectGrid">
-                <option selected>Alien</option>
-                
-            </select>
+            <AppSelectType/>
             <AppMainCards/>
         </div>
         
@@ -28,12 +27,4 @@ export default {
 @import '../styles/general.scss';
 @import '../styles/partials/_variables';
 
-.container {
-    .form-select{
-        width: 12%;
-    }
-    img {
-        height: 50px;
-    }
-}
 </style>
